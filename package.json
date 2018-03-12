@@ -1,5 +1,8 @@
 {
   "name": "landingpageapp",
   "private": true,
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "tailwindcss": "^0.4.3"
+  }
 }

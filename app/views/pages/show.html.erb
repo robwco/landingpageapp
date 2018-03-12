@@ -1,0 +1,14 @@
+<div class="actions mx-0 float-right pin-t pin-l fixed text-grey-dark shadow w-full py-2 px-2">
+	<%= notice %> 
+<%= link_to 'Make a change', edit_page_path(@page), :class => "no-underline text-grey-darker ml-2" %>
+<span class="mx-1">|</span>
+<%= link_to 'Your account', pages_path, :class => "no-underline text-grey-darker"  %>
+</div>
+
+<div class="text-xl my-8 max-w-lg mx-auto px-2 leading-normal">
+	<div class="py-6">
+	</div>
+  <%= @page.body.html_safe %>
+</div>
+
+

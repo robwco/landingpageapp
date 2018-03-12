@@ -12,4 +12,16 @@
 //
 //= require rails-ujs
 //= require turbolinks
+//= require trix
 //= require_tree .
+
+function showNote() {
+   document.getElementById('Note').classList.remove("hidden");
+   setTimeout(hideNote, 5000); // after 5 secs
+}
+
+function hideNote(){
+  document.getElementById("Note").classList.add("hidden");
+}
+
+document.getElementById("select").addEventListener("mouseup", showNote);

@@ -1,0 +1,17 @@
+<% content_for :title, "Your Pages - Daylight" %>
+
+<p id="notice"><%= notice %></p>
+
+<div class="max-w-sm mx-auto">
+<h1 class="mt-8 mb-4">Your Pages</h1>
+
+  <ul class="leading-normal text-xl">
+    <% @pages.each do |page| %>
+        <li><%= link_to  page.headline, edit_page_path(page), :class => "text-blue-dark" %> <%= link_to 'Destroy', page, method: :delete, data: { confirm: 'Are you sure?' }, :class => "ml-2 text-sm no-underline " %></li>
+    <% end %>
+  </ul>
+
+<br>
+
+<%= link_to 'New Page', new_page_path %>
+</div>
